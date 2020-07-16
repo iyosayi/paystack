@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+  </head>
+  <body>
+    <form id="paymentForm" action="/paystack/pay" method="POST">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email-address" required />
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount</label>
+        <input type="number" name="amount" id="amount" required />
+      </div>
+      <div class="form-group">
+        <label for="first-name">Full name</label>
+        <input type="text" name="full_name" id="full_name" />
+      </div>
+      <div class="form-group">
+        <select name="plan" id="plan">
+          <option value="10000">10000</option>
+          <option value="20000">20000</option>
+          <option value="30000">30000</option>
+        </select>
+      </div>
+      <div class="form-submit">
+        <button type="submit">Pay</button>
+      </div>
+    </form>
+    <!-- <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="/js/main.js"></script> -->
+  </body>
+</html>
