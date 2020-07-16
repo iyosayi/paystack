@@ -1,2 +1,8 @@
 config/key.js
 node_modules
+server.key
+server.cert
+cert.pem
+key.pem
+main.js
+
